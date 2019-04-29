@@ -13,5 +13,9 @@ func main() {
 		wg.Done()
 		wg.Add(1)
 	}()
+	go func() {
+		time.Sleep(time.Second)
+		wg.Done()
+	}()
 	wg.Wait()
 }
