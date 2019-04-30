@@ -1,6 +1,6 @@
 ## Go Concurrency Quizzes
 
-### Quiz 1
+### ※ Quiz 1
 
 <details>
  <summary><strong>Mutex quiz</strong></summary>
@@ -51,7 +51,7 @@ func C() {
 - [ ] D: panic
 
 
-### Quiz 2
+### ※ Quiz 2
 
 <details>
  <summary><strong>RWMutex quiz</strong></summary>
@@ -103,7 +103,7 @@ func C() {
 - [ ] C: the program is hung
 - [ ] D: panic
 
-### Quiz 3
+### ※ Quiz 3
 
 <details>
  <summary><strong>Waitgroup quiz</strong></summary>
@@ -137,7 +137,7 @@ func main() {
 - [ ] C: the program is hung
 - [ ] D: panic
 
-### Quiz 4
+### ※ Quiz 4
 
 <details>
  <summary><strong>Double-checking quiz</strong></summary>
@@ -177,7 +177,7 @@ func (o *Once) Do(f func()) {
 - [ ] C: can run but has not implemented the singleton pattern
 - [ ] D: panic
 
-### Quiz 5
+### ※ Quiz 5
 
 <details>
  <summary><strong>Mutex quiz</strong></summary>
@@ -220,7 +220,7 @@ func main() {
 - [ ] C: output `1, 2`
 - [ ] D: panic
 
-### Quiz 6
+### ※ Quiz 6
 
 <details>
  <summary><strong>Pool quiz</strong></summary>
@@ -279,7 +279,7 @@ func processRequest(size int) {
 - [ ] C: can run but has memory leak issue
 - [ ] D: panic
 
-### Quiz 7
+### ※ Quiz 7
 
 <details>
  <summary><strong>Channel quiz</strong></summary>
@@ -321,7 +321,7 @@ func main() {
 - [ ] C: after a while always output `#goroutines: 2`
 - [ ] D: panic
 
-### Quiz 8
+### ※ Quiz 8
 
 <details>
  <summary><strong>Channel quiz</strong></summary>
@@ -360,7 +360,7 @@ func main() {
 - [ ] D: panic
 
 
-### Quiz 9
+### ※ Quiz 9
 
 <details>
  <summary><strong>sync.Map quiz</strong></summary>
@@ -391,7 +391,7 @@ func main() {
 - [ ] C: output `0`
 - [ ] D: panic
 
-### Quiz 10
+### ※ Quiz 10
 
 <details>
  <summary><strong>sync.Map quiz</strong></summary>
@@ -422,7 +422,7 @@ func main() {
 - [ ] C: output `0`
 - [ ] D: panic
 
-### Quiz 11
+### ※ Quiz 11
 
 <details>
  <summary><strong>concurrent map quiz</strong></summary>
@@ -491,7 +491,7 @@ run `go run quiz.go` to start this program.
 - [ ] D: panic
 
 
-### Quiz 12
+### ※ Quiz 12
 
 <details>
  <summary><strong>slice quiz</strong></summary>
