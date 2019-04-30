@@ -16,7 +16,7 @@ func main() {
 
 func A() {
 	mu.Lock()
-	defer mu.Lock()
+	defer mu.Unlock()
 	chain = chain + " --> A"
 	B()
 }
@@ -28,6 +28,6 @@ func B() {
 
 func C() {
 	mu.Lock()
-	defer mu.Lock()
+	defer mu.Unlock()
 	chain = chain + " --> C"
 }
