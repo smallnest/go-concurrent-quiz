@@ -544,7 +544,7 @@ run `go run quiz.go` to start this program.
 ## Answer
 
 <details>
- <summary><strong style="color: blue">Answer</strong></summary>
+ <summary><strong>Answer</strong></summary>
 
 <p>
 1. D 
