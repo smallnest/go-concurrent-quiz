@@ -559,16 +559,16 @@ run `go run quiz.go` to start this program.
  <summary><strong>Answer</strong></summary>
 
 <p>
-1. D 
-2. D
-3. D
-4. C
-5. D
-6. C
-7. C
-8. D
-9. A
-10. B
-11. C
-12. C
+1. D <br>
+2. D <br>
+3. D <br>
+4. C <br>
+5. D <br>
+6. C <br>
+7. C <br>
+8. D <br>
+9. A <br>
+10. B <br>
+11. C <br>
+12. C <br>
 </details>
