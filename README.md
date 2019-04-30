@@ -40,7 +40,7 @@ func C() {
 	chain = chain + " --> C"
 }
 ```
-
+run `go run quiz.go` to compile and start.
 </details>
 
 **Question**
@@ -48,7 +48,7 @@ func C() {
 - [ ] A: can't compile
 - [ ] B: output `main --> A --> B --> C`
 - [ ] C: output `main`
-- [ ] D: panic
+- [ ] D: panic because of deadlock
 
 
 ### ※ Quiz 2
@@ -94,6 +94,7 @@ func C() {
 }
 ```
 
+run `go run quiz.go` to compile and start.
 </details>
 
 **Question**
@@ -101,7 +102,7 @@ func C() {
 - [ ] A: can't compile
 - [ ] B: output `1`
 - [ ] C: the program is hung
-- [ ] D: panic
+- [ ] D: panic because of deadlock
 
 ### ※ Quiz 3
 
@@ -128,6 +129,7 @@ func main() {
 }
 ```
 
+run `go run quiz.go` to compile and start.
 </details>
 
 **Question**
@@ -168,6 +170,7 @@ func (o *Once) Do(f func()) {
 }
 ```
 
+use this `Once` in products.
 </details>
 
 **Question**
@@ -175,7 +178,7 @@ func (o *Once) Do(f func()) {
 - [ ] A: can't compile
 - [ ] B: can run that implemented the singleton pattern
 - [ ] C: can run but has not implemented the singleton pattern
-- [ ] D: panic
+- [ ] D: panic when use this Once concurrently.
 
 ### ※ Quiz 5
 
@@ -211,6 +214,8 @@ func main() {
 }
 ```
 
+run `go run quiz.go` to compile and start.
+
 </details>
 
 **Question**
@@ -218,7 +223,7 @@ func main() {
 - [ ] A: can't compile
 - [ ] B: output `1, 1`
 - [ ] C: output `1, 2`
-- [ ] D: panic
+- [ ] D: panic because of deadlock
 
 ### ※ Quiz 6
 
@@ -270,6 +275,7 @@ func processRequest(size int) {
 }
 ```
 
+run `go run quiz.go` to compile and start.
 </details>
 
 **Question**
@@ -312,6 +318,8 @@ func main() {
 }
 ```
 
+run `go run quiz.go` to compile and start.
+
 </details>
 
 **Question**
@@ -350,6 +358,8 @@ func main() {
 }
 ```
 
+run `go run quiz.go` to compile and start.
+
 </details>
 
 **Question**
@@ -382,6 +392,7 @@ func main() {
 }
 ```
 
+run `go run quiz.go` to compile and start.
 </details>
 
 **Question**
@@ -413,6 +424,7 @@ func main() {
 }
 ```
 
+run `go run quiz.go` to compile and start.
 </details>
 
 **Question**
@@ -480,7 +492,7 @@ func main() {
 }
 ```
 
-run `go run quiz.go` to start this program.
+run `go run quiz.go` to compile and start this program.
 </details>
 
 **Question**
