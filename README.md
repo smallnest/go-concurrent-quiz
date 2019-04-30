@@ -48,7 +48,7 @@ run `go run quiz.go` to compile and start.
 - [ ] A: can't compile
 - [ ] B: output `main --> A --> B --> C`
 - [ ] C: output `main`
-- [ ] D: panic because of deadlock
+- [ ] D: the program exits because of panic
 
 
 ### ※ Quiz 2
@@ -102,7 +102,7 @@ run `go run quiz.go` to compile and start.
 - [ ] A: can't compile
 - [ ] B: output `1`
 - [ ] C: the program is hung
-- [ ] D: panic because of deadlock
+- [ ] D: the program exits because of panic
 
 ### ※ Quiz 3
 
@@ -137,7 +137,7 @@ run `go run quiz.go` to compile and start.
 - [ ] A: can't compile
 - [ ] B: no output. exit as normal
 - [ ] C: the program is hung
-- [ ] D: panic
+- [ ] D: the program exits because of panic
 
 ### ※ Quiz 4
 
@@ -178,7 +178,7 @@ use this `Once` in products.
 - [ ] A: can't compile
 - [ ] B: can run that implemented the singleton pattern
 - [ ] C: can run but has not implemented the singleton pattern
-- [ ] D: panic when use this Once concurrently.
+- [ ] D: programms will be panic when use this Once concurrently.
 
 ### ※ Quiz 5
 
@@ -223,7 +223,7 @@ run `go run quiz.go` to compile and start.
 - [ ] A: can't compile
 - [ ] B: output `1, 1`
 - [ ] C: output `1, 2`
-- [ ] D: panic because of deadlock
+- [ ] D: the program exits because of panic
 
 ### ※ Quiz 6
 
@@ -283,7 +283,7 @@ run `go run quiz.go` to compile and start.
 - [ ] A: can't compile
 - [ ] B: can run and works as normal
 - [ ] C: can run but has memory leak issue
-- [ ] D: panic
+- [ ] D: the program exits because of panic
 
 ### ※ Quiz 7
 
@@ -327,7 +327,7 @@ run `go run quiz.go` to compile and start.
 - [ ] A: can't compile
 - [ ] B: after a while always output `#goroutines: 1`
 - [ ] C: after a while always output `#goroutines: 2`
-- [ ] D: panic
+- [ ] D: the program exits because of panic
 
 ### ※ Quiz 8
 
@@ -367,7 +367,7 @@ run `go run quiz.go` to compile and start.
 - [ ] A: can't compile
 - [ ] B: output `1`
 - [ ] C: output `0`
-- [ ] D: panic
+- [ ] D: the program exits because of panic
 
 
 ### ※ Quiz 9
@@ -400,7 +400,7 @@ run `go run quiz.go` to compile and start.
 - [ ] A: can't compile
 - [ ] B: output `1`
 - [ ] C: output `0`
-- [ ] D: panic
+- [ ] D: the program exits because of panic
 
 ### ※ Quiz 10
 
@@ -432,7 +432,7 @@ run `go run quiz.go` to compile and start.
 - [ ] A: can't compile
 - [ ] B: output `1`
 - [ ] C: output `0`
-- [ ] D: panic
+- [ ] D: the program exits because of panic
 
 ### ※ Quiz 11
 
@@ -500,7 +500,7 @@ run `go run quiz.go` to compile and start this program.
 - [ ] A: can't compile
 - [ ] B: can run but has no race issue
 - [ ] C: can run but has race issue
-- [ ] D: panic
+- [ ] D: the program exits because of panic
 
 
 ### ※ Quiz 12
@@ -549,7 +549,7 @@ run `go run quiz.go` to start this program.
 - [ ] A: can't compile
 - [ ] B: output `2000`
 - [ ] C: output a number but the number may not be `2000`
-- [ ] D: panic
+- [ ] D: the program exits because of panic
 
 
 
