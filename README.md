@@ -3,8 +3,9 @@
 ### Quiz 1
 
 <details>
- <summary>Mutex code</summary>
- ```go
+ <summary><strong>Mutex code</strong></summary>
+
+```go
 package main
 
 import (
@@ -39,11 +40,12 @@ func C() {
 	chain = chain + " --> C"
 }
 ```
+
 </details>
 
 ** Question **
 
-- A: can't compile
-- B: output `main --> A --> B --> C`
-- C: output `main`
-- D: panic
+- [ ] A: can't compile
+- [ ] B: output `main --> A --> B --> C`
+- [ ] C: output `main`
+- [ ] D: panic
