@@ -18,7 +18,7 @@ type Once struct {
 }
 
 func (o *Once) Do(f func()) {
-	if o.done == nil {
+	if o.done != nil {
 		return
 	}
 
