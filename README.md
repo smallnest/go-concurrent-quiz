@@ -172,13 +172,13 @@ func (o *Once) Do(f func()) {
 	o.m.Lock()
 	defer o.m.Unlock()
 	if o.done == nil {
+		f()
 		o.done = &Singleton{
 			a:     1,
 			b:     2,
 			c:     3,
 			dummy: &dummyObject{4},
 		}
-		f()
 	}
 }
 
@@ -192,7 +192,7 @@ use this `Once` in products.
 - [ ] A: can't compile
 - [ ] B: can run that implemented the singleton pattern
 - [ ] C: can run but has not implemented the singleton pattern
-- [ ] D: programms will be panic when use this Once concurrently.
+- [ ] D: programms will be panic whitout concurrent goroutines access.
 
 ### ※ Quiz 5
 

@@ -25,12 +25,12 @@ func (o *Once) Do(f func()) {
 	o.m.Lock()
 	defer o.m.Unlock()
 	if o.done == nil {
+		f()
 		o.done = &Singleton{
 			a:     1,
 			b:     2,
 			c:     3,
 			dummy: &dummyObject{4},
 		}
-		f()
 	}
 }
