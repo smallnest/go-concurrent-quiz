@@ -566,6 +566,66 @@ run `go run quiz.go` to start this program.
 - [ ] D: the program exits because of panic
 
 
+### ※ Quiz 13
+
+<details>
+ <summary><strong>goroutines on loop iterator variables quiz</strong></summary>
+
+```go
+package main
+
+import (
+	"fmt"
+	"sync"
+	"time"
+)
+
+type T struct {
+	V int
+}
+
+func (t *T) Incr(wg *sync.WaitGroup) {
+	t.V++
+	wg.Done()
+}
+
+func (t *T) Print() {
+	time.Sleep(1e9)
+	fmt.Print(t.V)
+}
+
+func main() {
+	var wg sync.WaitGroup
+	wg.Add(10)
+
+	var ts = make([]T, 10)
+	for i := 0; i < 10; i++ {
+		ts[i] = T{i}
+	}
+
+	for _, t := range ts {
+		go t.Incr(&wg)
+	}
+	wg.Wait()
+
+	for _, t := range ts {
+		go t.Print()
+	}
+
+	time.Sleep(5 * time.Second)
+}
+```
+
+run `go run quiz.go` to start this program normally.
+</details>
+
+**Question**
+
+- [ ] A: output `12345678910`
+- [ ] B: output `0123456789`
+- [ ] C: output `9999999999`
+- [ ] D: output `10101010101010101010`
+
 
 ## Answer
 
@@ -585,4 +645,5 @@ run `go run quiz.go` to start this program.
 10. B <br>
 11. C <br>
 12. C <br>
+13. C <br>
 </details>
